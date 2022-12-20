@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    /*background-color: rgb(5, 0, 51);*/
+    background-color: rgba(255, 255, 255, 0);
+    background-size: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    transition: all .5s;
+    border-bottom: 2px solid gold;
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: rgba(255, 255, 255, 0.3) solid 1px;
+}
+
+.titulo{
+    font-size: 3.5vh;
+    margin: 18px;
+    margin-left: 25px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel';
+    text-align: center;
+    text-shadow: 0 0 3px #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.titulo:hover{
+    color: rgb(154, 154, 154);
+    text-shadow: 0 0 100px #fff;
+}
+
+.div-menu{
+    height: inherit;
+    width: 80%;
+}
+
+header label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 18px;
+    padding-right: 25px;
+    left: auto;
+    margin-left: auto;
+}
+
+header label i{
+    font-size: 5vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px #fff;
+
+}
+header label:hover{
+    cursor: pointer;
+}
+#btn-menu{
+    display: none;
+}
+.menu{
+    position: absolute;
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 100%;
+    transition: all 0.5s;
+    z-index: 1000;
+}
+.menu ul{
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.menu li{
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: auto;
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#btn-menu:checked ~ .menu {
+    margin-left: 50%;
+}
+
+/*-----------------------------------------------------------------------------------------------------------MAIN*/
+
+main{
+    background-image: url('../img/1.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------FOOTER*/
+
+footer{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(32, 32, 32);
+    background-size: auto;
+    border-top: white solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    footer p{
+        color: white;
+    }
+
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+    }
+
+        footer ul li{
+            margin: 0 15px 0 15px;
+        }
+
+        footer ul i{
+            font-size: 4vh;
+            color: #fff;
+            text-shadow: 0 0 2px #fff;
+
+        }
+
+
+/*---------------------------------------------------------------------------------------------CONTACTO.PHP*/
+
+.div-Contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------------------------------------------------------------------INFO_CONTACTO*/
+
+.div-infoContacto{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 150px;
+
+}
+
+/*----------------------------------------------------------------------------FORM_CORREO*/
+
+.div-formContacto{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../IMAGENES/desiertoByN.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-formContacto form{
+    width: 85%;
+    height: 85%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+
+}
+.div-formContacto h2{
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 0;
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+.div-formContacto input, textarea{
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+}
+.div-formContacto textarea{
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+}
+#botonForm{
+    background: black;
+    color: #fff;
+    padding: 20px;
+}
+
+#botonForm:hover{
+    cursor: pointer;
+    background-color: #292929;
+}
+
+@media(max-width:480px){
+    form{
+        width: 100%;
+    }
+}
