@@ -21,14 +21,14 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'correo2s4w@gmail.com';                     //SMTP username
-    $mail->Password   = 'Jorge1234';                               //SMTP password
+    $mail->Username   = 'envia@gmail.com';                     //SMTP username
+    $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('correo2s4w@gmail.com', 'form');
-    $mail->addAddress('jorgeherrero32@gmail.com', 'Isi');     //Add a recipient, name is optional
+    $mail->setFrom('envia@gmail.com', 'form');
+    $mail->addAddress('recibe@gmail.com', 'name');     //Add a recipient, name is optional
 
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
