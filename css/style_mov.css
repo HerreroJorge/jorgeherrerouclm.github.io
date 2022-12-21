@@ -241,6 +241,7 @@ section{
     height: 500px;
     background-image: url('../img/1.png');
     background-size: cover;
+    box-shadow: burlywood 0 0 20px;
 }
 
 .about{
@@ -354,23 +355,25 @@ section{
                 z-index: -1;
                 transition: all 1s;
                 border: 0;
-                font-size: 3vw;
+                font-size: 2.5vw;
             }/*
             .ulNombreFixed{
                 left: 46vw;
                 margin-top: 200px;
             }*/
             .buttonCV{
-                margin-left: -20px;
                 z-index: 10;
                 font-family: 'Quicksand', sans-serif;
-                font-size: 2.5vh;
+                font-size: 1.8vh;
                 padding: 15px;
                 border: 2px solid burlywood;
                 border-radius: 15px;
                 background-color: #fff;
                 cursor: pointer;
                 transition: all .8s;
+                text-decoration: none;
+                color: #333333;
+
             }/*
             .buttonCVFixed{
                 font-family: 'Quicksand', sans-serif;

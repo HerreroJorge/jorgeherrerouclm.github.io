@@ -3,6 +3,7 @@ body{
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-family: sans-serif;
+    zoom: 100%;
 }
 
 html{
@@ -192,6 +193,8 @@ section{
     height: 800px;
     background-image: url('../img/1.png');
     background-size: cover;
+    border-bottom: 1px solid black;
+    box-shadow: burlywood 0 0 20px;
 }
 
 .about{
@@ -202,7 +205,6 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
     .primeraInfo{
@@ -212,6 +214,7 @@ section{
         align-items: flex-start;
         justify-content: center;
         margin-bottom: 70px;
+        overflow: hidden;
     }
 
         .foto{
@@ -236,11 +239,10 @@ section{
             flex-direction: column;
             align-items: flex-start;
             font-family: 'Quicksand', sans-serif;
-            overflow: hidden;
         }
             .h1Nombre{
                 z-index: -1;
-                width: 1200px;
+                width: 1800px;
                 position: absolute;
                 color: black;
                 font-size: 4.5vh;
@@ -250,23 +252,23 @@ section{
                 border-radius: 70px;
                 transition: all 1s;
                 text-align: start;
-                left: -1400px;            
+                right: 200%;            
             }
             .h1NombreFixed{
                 z-index: -1;
                 position: absolute;
-                width: 1200px;
+                width: 1800px;
                 background-color:#333333;
                 color: burlywood;
                 font-size: 4.5vh;
                 margin-top: 0;
                 margin-bottom: 0;
                 text-align: end;
-                left: -25%;
+                right: 22%;
             }
             .rowNombre{
                 z-index: -1;
-                width: 600px;
+                width: 1500px;
                 display: flex;
                 flex-direction: row;
                 position: static;
@@ -278,29 +280,30 @@ section{
                 display: flex;
                 position: static;
                 flex-direction: row;
-                margin-top: 70px;
+                margin-top: 15%;
             }
             h2{
                 text-align: center;
                 color: burlywood;
                 text-shadow: 0 0 1px rgb(0, 0, 0);
-                font-size: 3.6vh;
+                font-size: 1.6vw;
                 transition: all 1s;
             }
             h3{
-                margin: 25px 0 40px 10px;
-                font-size: 3vh;
+                margin-right: auto;
+                margin-left: 10px;
+                font-size: 1.4vw;
                 transition: all 1s;
             }
             .pNombre{
                 position: absolute;
-                margin-top: 140px;
+                margin-top: 10%;
                 margin-right: 0;
                 font-size: 2.4vh;
                 transition: all .8s;
                 left: 90vw;
-                overflow: hidden;
                 opacity: 0;
+                overflow: hidden;
             }
             .pNombreFixed{
                 font-size: 2.4vh;
@@ -310,22 +313,22 @@ section{
             .ulNombre{
                 z-index: -1;
                 position: absolute;
-                margin-top: 200px;
+                margin-top: 15%;
+                font-size: 1vw;
                 transition: all 1s;
                 border: 0;
                 left: -20vw;
             }
             .ulNombreFixed{
                 left: 46vw;
-                margin-top: 200px;
             }
             .buttonCV{
-                width: 150px;
+                width: 10%;
                 margin-right: 0;
                 opacity: 0;
                 overflow: hidden;
                 position: absolute;
-                margin-top: 300px;
+                margin-top: 22%;
                 font-family: 'Quicksand', sans-serif;
                 font-size: 2.5vh;
                 padding: 15px;
@@ -334,7 +337,10 @@ section{
                 background-color: #fff;
                 cursor: pointer;
                 transition: all .8s;
+                color: #333333;
                 left: 86vw;
+                text-align: center;
+                text-decoration: none;
             }
             .buttonCVFixed{
                 font-family: 'Quicksand', sans-serif;

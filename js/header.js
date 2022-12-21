@@ -19,7 +19,7 @@ document.addEventListener('scroll', function () {
     } else{
         header.classList.remove('fixed2');
     }
-    if ((window.scrollY > 2200)){
+    if ((window.scrollY >= 2200)){
         header.classList.add('fixed3');
     } else{
         header.classList.remove('fixed3');
