@@ -109,6 +109,9 @@ header{
     color: rgb(182, 182, 182);
     text-shadow: 0 0 100px #fff;
 }
+.fixed2 #btn-menu:checked ~ .menu{
+    margin-left: 42%;
+}
 
 .fixed3 .titulo{
     color: rgb(255, 255, 255);
@@ -127,6 +130,9 @@ header{
 .fixed3 .menu ul li a:hover{
     color: rgb(37, 37, 37);
     text-shadow: 0 0 100px #fff;
+}
+.fixed3 #btn-menu:checked ~ .menu{
+    margin-left: 42%;
 }
 
 
@@ -151,6 +157,7 @@ header label{
     width: 30px;
     height: 30px;
     padding: 18px;
+    padding-bottom: 20px;
     padding-right: 25px;
     left: auto;
     margin-left: auto;
@@ -222,6 +229,7 @@ main{
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid black;
+    font-family: 'Quicksand', sans-serif;
 }/*
 section{
     display: flex;
@@ -631,6 +639,7 @@ section{
         }
             .infoContact h2{
                 font-size: 8vw;
+                margin-bottom: 30px;
                 color: white;
                 text-shadow: 0 0 4px rgb(0, 0, 0);
             }
