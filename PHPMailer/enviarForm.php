@@ -14,6 +14,8 @@ $msg = $_POST['mensaje'];
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
+echo "Esto aun no es funcional porque la libreria de PHPMailer me exige poner contraseñas de correo para automatizar mensajes.\n
+    Lo implementaré cuando tenga hosting propio no en github";
 
 try {
     //Server settings
