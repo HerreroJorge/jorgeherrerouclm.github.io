@@ -13,9 +13,7 @@ header{
     width: 100%;
     top: 0;
     margin: 0;
-    /*background-color: rgb(5, 0, 51);*/
     background-color: rgba(255, 255, 255, 0.8);
-    background-size: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,7 +25,7 @@ header{
 .fixed{
     position: fixed;
     margin: 0;
-    margin-left: 3%;
+    margin-left: 8%;
     width: 100%;
     top: 30px;
     left: 0;
@@ -35,15 +33,15 @@ header{
     border-bottom: 1px solid burlywood;
     border-left: 1px solid burlywood;
     background-color: rgba(65, 65, 65, 0.8);
-    border-radius: 30px;
+    border-radius: 40px;
     box-shadow: rgb(135, 135, 135) 0 0 10px;
-    z-index: 2;
+    z-index: 20;
 }
 
 .fixed2{
     position: fixed;
     margin: 0;
-    margin-left: 3%;
+    margin-left: 8%;
     width: 100%;
     top: 30px;
     left: 0;
@@ -51,14 +49,14 @@ header{
     border-bottom: 1px solid rgb(0, 0, 0);
     border-left: 1px solid rgb(0, 0, 0);
     background-color: rgba(255, 236, 210, 0.9);
-    border-radius: 30px;
+    border-radius: 40px;
     box-shadow: rgb(135, 135, 135) 0 0 10px;
-    z-index: 2;
+    z-index: 20;
 }
 .fixed3{
     position: fixed;
     margin: 0;
-    margin-left: 3%;
+    margin-left: 8%;
     width: 100%;
     top: 30px;
     left: 0;
@@ -66,59 +64,102 @@ header{
     border-bottom: 1px solid burlywood;
     border-left: 1px solid burlywood;
     background-color: rgba(65, 65, 65, 0.8);
-    border-radius: 30px;
+    border-radius: 40px;
     box-shadow: rgb(135, 135, 135) 0 0 10px;
-    z-index: 2;
+    z-index: 20;
 }
 
 .fixed .titulo{
     color: rgb(255, 255, 255);
-    margin: 20px;
-    margin-left: 0;
-    font-size: 2vh;
-    font-family: 'Quicksand', sans-serif;
+    margin: auto;
+    margin-left: 25px;
+    font-size: 4.5vw;
 }
-
+.fixed label{
+    margin-right: 30px;
+}
 .fixed .menu ul li a{
     color: rgb(210, 210, 210);
+    background-color: rgba(65, 65, 65, 0.8);
+    border: 1px solid burlywood;
+}
+.fixed .menu ul li a:hover{
+    color: rgb(37, 37, 37);
+    text-shadow: 0 0 100px #fff;
+}
+.fixed #btn-menu:checked ~ .menu{
+    margin-left: 42%;
 }
 
 .fixed2 .titulo{
     color: rgb(80, 80, 80);
-    margin: 20px;
-    margin-left: 0;
-    font-size: 2vh;
-    font-family: 'Quicksand', sans-serif;
+    margin: auto;
+    margin-left: 25px;
+    font-size: 4.5vw;
 }
-
+.fixed2 label{
+    margin-right: 30px;
+}
 .fixed2 .menu ul li a{
     color: rgb(80, 80, 80);
+    background-color: rgba(255, 236, 210, 0.9);
+    border: 1px solid black;
+}
+.fixed2 .menu ul li a:hover{
+    color: rgb(182, 182, 182);
+    text-shadow: 0 0 100px #fff;
 }
 
 .fixed3 .titulo{
     color: rgb(255, 255, 255);
-    margin: 20px;
-    margin-left: 0;
-    font-size: 2vh;
-    font-family: 'Quicksand', sans-serif;
+    margin: auto;
+    margin-left: 25px;
+    font-size: 4.5vw;
 }
-
+.fixed3 label{
+    margin-right: 30px;
+}
 .fixed3 .menu ul li a{
     color: rgb(210, 210, 210);
+    background-color: rgba(65, 65, 65, 0.8);
+    border: 1px solid burlywood;
+}
+.fixed3 .menu ul li a:hover{
+    color: rgb(37, 37, 37);
+    text-shadow: 0 0 100px #fff;
 }
 
 
 .titulo{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 3.2vh;
-    margin: 2.5%;
-    margin-left: 20%;
-    width: 300px;
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Great Vibes', cursive;
+    font-size: 7vw;
+    margin: 18px;
+    margin-left: 25px;
+    margin-bottom: 16px;
     color: rgb(32, 32, 32);
     text-align: center;
     text-decoration: none;
     transition: all 0.5s;
+}
+.div-menu{
+    height: inherit;
+    width: 80%;
+}
+header label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 18px;
+    padding-right: 25px;
+    left: auto;
+    margin-left: auto;
+}
 
+header label i{
+    font-size: 5vh;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px #fff;
 }
 header label:hover{
     cursor: pointer;
@@ -127,29 +168,30 @@ header label:hover{
     display: none;
 }
 .menu{
-    width: 40%;
-    margin-right: 10%;
-    display: flex;
-    align-items: center
+    position: absolute;
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 100%;
+    transition: all .5s;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-left: burlywood;
+    border-bottom: burlywood;
 }
 
 .menu ul{
     width: 100%;
-    height: auto;
     margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .menu li{
     width: 15%;
-    height: inherit;
-    height: 6vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    width: auto;
 }
 
 .menu li a{
@@ -157,9 +199,11 @@ header label:hover{
     padding: 15px 20px;
     color: rgb(32, 32, 32);
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 3.5vw;
     margin: 0 0 0 0;
     transition: all 0.1s;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .menu li a:hover{
@@ -177,23 +221,24 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-}
+    border-bottom: 2px solid black;
+}/*
 section{
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
-}
+}*/
 .home{
-    height: 800px;
+    height: 500px;
     background-image: url('../img/1.png');
     background-size: cover;
 }
 
 .about{
     width: 100%;
-    padding: 150px 0 0 0;
-    margin-bottom: 120px;
+    padding: 100px 0 0 0;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,7 +247,7 @@ section{
 }
 
     .primeraInfo{
-        width: 70%;
+        width: 90%;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -215,8 +260,6 @@ section{
             z-index: 0;
             padding: 0;
             margin: 0;
-            /*border: solid burlywood 2px;
-            box-shadow: black 2px 2px 0 0;*/
         }
             .foto img{
                 border: 2px solid #333333;
@@ -226,29 +269,29 @@ section{
             }
 
         .infoCV{
-            width: 46%;
+            width: 70%;
             margin-left: 5%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             font-family: 'Quicksand', sans-serif;
-            overflow: hidden;
         }
             .h1Nombre{
                 z-index: -1;
-                width: 1200px;
+                width: 500px;
                 position: absolute;
-                color: black;
-                font-size: 4.5vh;
+                color: burlywood;
+                font-size: 4.5vw;
                 margin: 0;
                 padding: 5px;
+                background-color:#333333;
                 padding-right: 15px;
                 border-radius: 70px;
                 transition: all 1s;
-                text-align: start;
-                left: -1400px;            
+                text-align: end;
+                left: -170px;
             }
-            .h1NombreFixed{
+            /*.h1NombreFixed{
                 z-index: -1;
                 position: absolute;
                 width: 1200px;
@@ -259,69 +302,59 @@ section{
                 margin-bottom: 0;
                 text-align: end;
                 left: -18vw;
-            }
+            }*/
             .rowNombre{
+                margin-top: 30px;
                 z-index: -1;
-                width: 600px;
                 display: flex;
-                flex-direction: row;
-                position: static;
-                margin-top: 70px;
-                margin-right: 1100px;
+                flex-direction: column;
                 transition: all 1s;
-            }
+            }/*
             .rowNombreFixed{
                 display: flex;
                 position: static;
-                flex-direction: row;
+                flex-direction: column;
                 margin-top: 70px;
-            }
+            }*/
             h2{
-                text-align: center;
+                text-align: start;
                 color: burlywood;
                 text-shadow: 0 0 1px rgb(0, 0, 0);
-                font-size: 3.6vh;
+                font-size: 4vw;
+                margin-bottom: 2px;
                 transition: all 1s;
             }
             h3{
-                margin: 25px 0 40px 10px;
-                font-size: 3vh;
+                text-align: start;
+                margin: 0;
+                font-size: 3.5vw;
                 transition: all 1s;
             }
             .pNombre{
-                position: absolute;
-                margin-top: 140px;
-                margin-right: 0;
-                font-size: 2.4vh;
+                font-size: 2.5vw;
                 transition: all .8s;
-                left: 90vw;
                 overflow: hidden;
-                opacity: 0;
-            }
+                color: black;
+                text-align: justify;
+            }/*
             .pNombreFixed{
                 font-size: 2.4vh;
                 opacity: 1;
                 left: 46vw;
-            }
+            }*/
             .ulNombre{
                 z-index: -1;
-                position: absolute;
-                margin-top: 200px;
                 transition: all 1s;
                 border: 0;
-                left: -20vw;
-            }
+                font-size: 3vw;
+            }/*
             .ulNombreFixed{
                 left: 46vw;
                 margin-top: 200px;
-            }
+            }*/
             .buttonCV{
-                width: 150px;
-                margin-right: 0;
-                opacity: 0;
-                overflow: hidden;
-                position: absolute;
-                margin-top: 300px;
+                margin-left: -20px;
+                z-index: 10;
                 font-family: 'Quicksand', sans-serif;
                 font-size: 2.5vh;
                 padding: 15px;
@@ -330,8 +363,7 @@ section{
                 background-color: #fff;
                 cursor: pointer;
                 transition: all .8s;
-                left: 86vw;
-            }
+            }/*
             .buttonCVFixed{
                 font-family: 'Quicksand', sans-serif;
                 font-size: 2.5vh;
@@ -343,7 +375,7 @@ section{
                 right: 600px;
                 opacity: 1;
                 left: 47vw;
-            }
+            }*/
             .buttonCV:hover{
                 border: rgb(60, 60, 60) solid 2px;
                 color: rgb(60, 60, 60);
@@ -361,19 +393,22 @@ section{
         align-items: center;
         font-family: 'Quicksand', sans-serif;
     }
+        .skills h1{
+            margin: 0;
+        }
         .skills ul{
-            margin-top: 40px;
+            margin-top: 10px;
             padding: 0;
             list-style: none;
             width: 100%;
         }
         .skills i{
-            font-size: 1.8vw;
+            font-size: 3vw;
             margin: 5px;
         }
         .skills ul h3{
-            margin: 40px 0 30px 0;
-            font-size: 2.3vh;
+            margin: 40px 0 15px 0;
+            font-size: 2vh;
         }
             .barraProgreso{
                 border: 2px solid black;
@@ -455,7 +490,7 @@ section{
     justify-content: center;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .portfolio h1{
@@ -490,23 +525,24 @@ section{
     }
         .slider__section{
             background-color: rgb(90, 90, 90);
-            width: 100%;
+            width: 90%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            align-items: center;
             overflow: hidden;
         }
             .slider-izquierda{
-                padding: 80px 70px 80px 100px;
+                padding: 12;
                 display: block;
                 flex-direction: column;
-                width: 55%;
-                height: 100%;
+                width: 90%;
+                height: 40%;
                 margin: 0;
-                margin-left: 40px;
                 overflow: hidden;
             }
                 .slider-izquierda h1{
                     text-align: left;
+                    font-size: 6vw;
                     color: #fff;
                     margin: 20px;
                     margin-left: 0;
@@ -516,7 +552,7 @@ section{
                 .slider-izquierda p{
                     text-align: justify;
                     color: #fff;
-                    font-size: large;
+                    font-size: 3.2vw;
                     overflow: hidden;
                 }
 
@@ -524,16 +560,17 @@ section{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                width: 45%;
-                height: 100%;
+                width: 90%;
+                height: 60%;
                 margin: 0;
-                margin-right: 140px;
+                margin-top: 25px;
+                padding: 10px;
                 overflow: hidden;
             }
                 .slider-derecha img{
                     object-fit: cover;
                     width: 100%;
-                    margin: 5px;
+                    margin-bottom: 5px;
                     border-radius: 15px;
                     overflow: hidden;
                 }
@@ -542,7 +579,7 @@ section{
             width: 40px;
             height: 40px;
             background: rgba(255,255,255,0.7);
-            top: 50%;
+            top: 38%;
             transform: translateY(-50%);
             font-size: 30px;
             font-family: monospace;
@@ -564,7 +601,6 @@ section{
 /*-------------------------------------------------------------------------------------------------------------CONTACT*/
 .contact{
     width: 100%;
-    height: auto;
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
@@ -574,10 +610,9 @@ section{
 
     .infoContactForm{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: rgb(242, 242, 242);
         width: 90%;
-        height: 600px;
         font-family: 'Quicksand', sans-serif;
         box-shadow: inset 20px 20px 20px 0 burlywood;
         border: 2px solid rgb(90, 90, 90);
@@ -585,26 +620,26 @@ section{
     }
 
         .infoContact{
-            width: 50%;
-            padding: 70px;
+            width: 100%;
             padding-top: 20px;
+            margin-bottom: 25px;
             text-align: left;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             font-family: 'Quicksand', sans-serif;
         }
             .infoContact h2{
-                font-size: 4.2vw;
+                font-size: 8vw;
                 color: white;
                 text-shadow: 0 0 4px rgb(0, 0, 0);
             }
             .ulInformacion{
-                margin-left: 30px;
-                margin-top: 0;
+                margin: 0;
+                padding-left: 0;
                 list-style: none;
                 color: rgb(46, 46, 46);
-                font-size: 1.2vw;
+                font-size: 4vw;
             }
                 .ulInformacion li{
                     display: flex;
@@ -613,11 +648,10 @@ section{
                 }
                     .ulInformacion li p{
                         margin: 0;
-                        margin-left: 10px;
+                        margin-left: 5px;
                     }
                     .ulInformacion li i{
-                        margin: 0;
-                        margin-left: 10px;
+                        margin: 5;
                         color: #4a4a4a;
                     }
             .ulRedes{
@@ -625,9 +659,10 @@ section{
                 flex-direction: row;
                 list-style: none;
                 margin: 10px;
+                padding: 0;
             }
                 .ulRedes a i{
-                    font-size: 3.5vw;
+                    font-size: 7vw;
                     margin: 10px;
                     color: rgb(90, 90, 90);
                     text-shadow: 0 0 4px burlywood;
@@ -638,7 +673,8 @@ section{
                 }
 
         .div-formContacto{
-            width: 50%;
+            width: 100%;
+            margin-bottom: 30px;
             display: flex;
             height: inherit;
             align-items: center;
@@ -647,7 +683,7 @@ section{
         
             .div-formContacto form{
                 width: 70%;
-                height: 75%;
+                height: 92%;
                 background: rgb(90, 90, 90);
                 padding: 10px 20px;
                 border-radius: 20px;
@@ -658,13 +694,13 @@ section{
                 color: #fff;
                 text-align: center;
                 margin: 0;
-                font-size: 2vw;
+                font-size: 5vw;
                 margin-bottom: 24px;
                 font-family: 'Quicksand', sans-serif;
             }
             .div-formContacto input, textarea{
                 width: 100%;
-                margin-bottom: 24px;
+                margin-bottom: 12px;
                 padding: 7px;
                 box-sizing: border-box;
                 font-size: 17px;
@@ -687,7 +723,7 @@ section{
                 background: rgb(230, 230, 230);
                 color: rgb(49, 49, 49);
                 box-shadow: inset 0 0 5px 0 gray;
-                padding: 24px;
+                padding: 20px;
                 font-family: 'Quicksand', sans-serif;
                 transition: all .5s;
             }
@@ -702,15 +738,26 @@ section{
 
 footer{
     width: 100%;
-    height: 140px;
     background-color: rgb(32, 32, 32);
     background-size: auto;
-    border-top: white solid 1px;
+    border-top: burlywood solid 3px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
 }
+    footer h3{
+        font-family: 'Great Vibes', cursive;
+        font-size: 4.5vw;
+        color: #fff;
+        text-shadow: burlywood 0 0 5px;
+        padding: 20px;
+        margin: 0;
+    }
     footer p{
         color: white;
-        margin-right: 100px;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 1vw;
+        margin: auto;
+        margin-right: 20px;
     }
