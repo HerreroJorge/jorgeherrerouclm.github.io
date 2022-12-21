@@ -44,7 +44,8 @@ try {
     echo 'Message has been sent';
     header('Location:../index.php');
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Esto aun no es funcional porque la libreria de PHPMailer me exige poner contraseñas de correo para automatizar mensajes.\n
+    Lo implementaré cuando tenga hosting propio no en github";
 }
 
 ?>
